@@ -1,0 +1,37 @@
+<div class="Container">
+  <div class="box">
+    <div class="calculator__display">
+      <div class="input" >{{output_num}}</div>
+      <div class="output" >{{num}}</div>
+    </div>
+    <button (click)="twoOperand('Percentage' , '%')">%</button>
+    <button (click)="delete('last')">CE</button>
+    <button (click)="delete('all')">C</button>
+    <button (click)="delete('digit')">⌫</button>
+
+    <button (click)="oneOperand('Invert', false)">1/x</button>
+    <button (click)="oneOperand('Square', false)">x²</button>
+    <button (click)="oneOperand('Sqrt', false)">√x</button>
+    <button (click)="twoOperand('Div' , '÷')">÷</button>
+
+    <button (click)="changeInput('7')">7</button>
+    <button (click)="changeInput('8')">8</button>
+    <button (click)="changeInput('9')">9</button>
+    <button (click)="twoOperand('multi' , '*')">*</button>
+
+    <button (click)="changeInput('4')">4</button>
+    <button (click)="changeInput('5')">5</button>
+    <button (click)="changeInput('6')">6</button>
+    <button (click)="twoOperand('Sub' , '-')">-</button>
+
+    <button (click)="changeInput('1')">1</button>
+    <button (click)="changeInput('2')">2</button>
+    <button (click)="changeInput('3')">3</button>
+    <button (click)="twoOperand('Add' , '+')">+</button>
+
+    <button (click)="oneOperand('Change_Sign', true)">+/-</button>
+    <button (click)="changeInput('0')">0</button>
+    <button (click)="changeInput('.')">.</button>
+    <button id="equal"(click)="Equal()">=</button>
+  </div>
+</div>
